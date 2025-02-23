@@ -4,24 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar Coding</title>
+
+    <!-- Ini CSS Internal -->
+     <style>
+        .content{
+            color: blue;
+        }
+
+        #content{
+            color: red;
+        }
+     </style>
+
+     <!-- Ini CSS Eksternal -->
+      <link rel="stylesheet" href="CSS\styles.css">
 </head>
+
 <body>
-    <div>
-        <h1>
-            Ini Title
-        </h1>
-    </div>
+    <!-- Ini CSS Inline -->
+    <header style="display: flex; justify-content: space-between;">
+        <h1 style="color: brown;">Ini Kiri</h1>
+        <h1 style="color: brown;">Ini Kanan</h1>
+    </header>
 
-    <div>
-        <p>
-            Lorem Ipsum Dolor Sit Amet Adipiscing ...
-        </p>
-    </div>
+    <article>
+        <p class="content">Lorem Ipsum Dolor Sit Amet Adipiscing ...</p>
+        <p class="content" id="content">Lorem Ipsum Dolor Sit Amet Adipiscing ...</p>
+    </article>
 
-    <div>
+    <footer style="text-align: center;">
         <span>
             Ini Footer
         </span>
-    </div>
+    </footer>
 </body>
 </html>
